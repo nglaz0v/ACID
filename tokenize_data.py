@@ -12,8 +12,8 @@ def tokenize_function(examples):
 
 cache_dir = './tmp' # Cache directory
 
-data_files = {'train': ["data/trn.csv"],
-              'test' : ["data/val.csv"]}
+data_files = {'train': ["data/train-data.csv"],
+              'test' : ["data/test-data.csv"]}
 extension = 'csv'
 raw_datasets = load_dataset(extension, data_files=data_files, cache_dir=cache_dir)
 
