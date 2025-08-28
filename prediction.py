@@ -6,7 +6,7 @@ from transformers import (
 import datasets
 import numpy as np
 
-model_path = "opt-seq-pubmed-tokenizer"
+model_path = "output_checkpoint"
 model = AutoModelForCausalLM.from_pretrained(model_path)
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 ds = datasets.load_from_disk("tokenized_data")["test"]
